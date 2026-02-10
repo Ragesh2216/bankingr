@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly - Modern Banking Solution</title>
+    <meta name="description"
+        content="Stackly - Your trusted banking partner for secure and convenient financial solutions">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader-container">
+            <div class="logo-loader">
+                <div class="stack-layer stack-1"></div>
+                <div class="stack-layer stack-2"></div>
+                <div class="stack-layer stack-3"></div>
+            </div>
+            <h2 class="loading-text">Stackly</h2>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="main-header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <div class="logo">
+                        <div class="logo-stack">
+                            <span class="stack-block b1"></span>
+                            <span class="stack-block b2"></span>
+                            <span class="stack-block b3"></span>
+                        </div>
+                        <span class="brand-name">Stackly</span>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="cta-btn" onclick="goto404()">Get Started</button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Banking Made <span class="gradient-text">Simple</span> & Secure
+                    </h1>
+                    <p class="hero-description">
+                        Experience the future of digital banking with Stackly. Manage your finances effortlessly with
+                        our cutting-edge technology and 24/7 support.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" onclick="goto404()">Open Account</button>
+                        <button class="btn-secondary" onclick="goto404()">Learn More</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/hero_banking_1770639339873.jpg" alt="Mobile Banking Dashboard"
+                        class="hero-main-image">
+                    <div class="floating-card card-1">
+                        <div class="card-icon">💳</div>
+                        <div class="card-info">
+                            <h4>Virtual Card</h4>
+                            <p>Instant access</p>
+                        </div>
+                    </div>
+                    <div class="floating-card card-2">
+                        <div class="card-icon">🔒</div>
+                        <div class="card-info">
+                            <h4>Secure</h4>
+                            <p>256-bit encryption</p>
+                        </div>
+                    </div>
+                    <div class="floating-card card-3">
+                        <div class="card-icon">📊</div>
+                        <div class="card-info">
+                            <h4>Analytics</h4>
+                            <p>Real-time tracking</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Banking Services</h2>
+                <p class="section-subtitle">Comprehensive financial solutions tailored for you</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">💰</div>
+                    <h3>Savings Account</h3>
+                    <p>Earn competitive interest rates with our high-yield savings accounts</p>
+                    <button class="service-btn" onclick="goto404()">Learn More →</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💳</div>
+                    <h3>Credit Cards</h3>
+                    <p>Flexible credit options with amazing rewards and cashback</p>
+                    <button class="service-btn" onclick="goto404()">Apply Now →</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Home Loans</h3>
+                    <p>Make your dream home a reality with our competitive loan rates</p>
+                    <button class="service-btn" onclick="goto404()">Get Quote →</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📈</div>
+                    <h3>Investments</h3>
+                    <p>Grow your wealth with expert-managed investment portfolios</p>
+                    <button class="service-btn" onclick="goto404()">Invest Now →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Stackly?</h2>
+                <p class="section-subtitle">Advanced features for modern banking</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Instant Transfers</h3>
+                    <p>Send and receive money in seconds with zero fees</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔐</div>
+                    <h3>Bank-Level Security</h3>
+                    <p>Your data is protected with military-grade encryption</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile Banking</h3>
+                    <p>Manage your account anywhere with our intuitive app</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Global Access</h3>
+                    <p>Access your funds from anywhere in the world</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">💬</div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer service whenever you need it</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Smart Insights</h3>
+                    <p>AI-powered financial advice and spending analysis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Banking Section -->
+    <section class="digital-banking-section">
+        <div class="container">
+            <div class="digital-content">
+                <div class="digital-image">
+                    <img src="images/hero_banking_1770639339873.jpg" alt="Digital Banking App"
+                        class="digital-banking-img">
+                </div>
+                <div class="digital-text">
+                    <h2>Experience Next-Gen Digital Banking</h2>
+                    <p>Manage all your finances from one powerful platform. Track spending, set goals, and make informed
+                        financial decisions with real-time insights.</p>
+                    <ul class="feature-list">
+                        <li>✓ Real-time transaction notifications</li>
+                        <li>✓ Automated savings and budgeting</li>
+                        <li>✓ Contactless payments</li>
+                        <li>✓ Multi-currency support</li>
+                    </ul>
+                    <button class="btn-primary" onclick="goto404()">Download App</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section class="security-section">
+        <div class="container">
+            <div class="security-content">
+                <div class="security-text">
+                    <h2>Your Security is Our Priority</h2>
+                    <p>We employ cutting-edge security measures to protect your financial data and transactions. Sleep
+                        peacefully knowing your money is safe with Stackly.</p>
+                    <div class="security-features">
+                        <div class="sec-feature">
+                            <div class="sec-icon">🛡️</div>
+                            <div>
+                                <h4>Fraud Detection</h4>
+                                <p>AI-powered monitoring 24/7</p>
+                            </div>
+                        </div>
+                        <div class="sec-feature">
+                            <div class="sec-icon">🔑</div>
+                            <div>
+                                <h4>Two-Factor Auth</h4>
+                                <p>Extra layer of protection</p>
+                            </div>
+                        </div>
+                        <div class="sec-feature">
+                            <div class="sec-icon">✅</div>
+                            <div>
+                                <h4>Biometric Login</h4>
+                                <p>Face ID & Fingerprint</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-secondary" onclick="goto404()">Security Details</button>
+                </div>
+                <div class="security-visual">
+                    <img src="images/security_shield_1770639387598.jpg" alt="Banking Security" class="security-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-subtitle">Join thousands of satisfied customers</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Stackly has transformed how I manage my finances. The app is intuitive
+                        and the customer service is exceptional!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JD</div>
+                        <div>
+                            <h4>John Doe</h4>
+                            <p>Entrepreneur</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Best banking experience ever! The instant transfers and zero fees make
+                        it perfect for my business needs."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SM</div>
+                        <div>
+                            <h4>Sarah Miller</h4>
+                            <p>Small Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"I love the investment features. Made my first investment within minutes
+                        and the returns have been great!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MJ</div>
+                        <div>
+                            <h4>Michael Johnson</h4>
+                            <p>Investor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Simple, Transparent Pricing</h2>
+                <p class="section-subtitle">Choose the plan that fits your needs</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3 class="plan-name">Basic</h3>
+                    <div class="plan-price">
+                        <span class="currency">$</span>
+                        <span class="amount">0</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>✓ Free account opening</li>
+                        <li>✓ Basic mobile banking</li>
+                        <li>✓ Debit card</li>
+                        <li>✓ Online transfers</li>
+                        <li>✗ Investment options</li>
+                    </ul>
+                    <button class="plan-btn" onclick="goto404()">Get Started</button>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3 class="plan-name">Premium</h3>
+                    <div class="plan-price">
+                        <span class="currency">$</span>
+                        <span class="amount">9.99</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>✓ Everything in Basic</li>
+                        <li>✓ Premium credit card</li>
+                        <li>✓ Investment accounts</li>
+                        <li>✓ Priority support</li>
+                        <li>✓ Cashback rewards</li>
+                    </ul>
+                    <button class="plan-btn" onclick="goto404()">Get Started</button>
+                </div>
+                <div class="pricing-card">
+                    <h3 class="plan-name">Business</h3>
+                    <div class="plan-price">
+                        <span class="currency">$</span>
+                        <span class="amount">29.99</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>✓ Everything in Premium</li>
+                        <li>✓ Business accounts</li>
+                        <li>✓ Multi-user access</li>
+                        <li>✓ Advanced analytics</li>
+                        <li>✓ Dedicated manager</li>
+                    </ul>
+                    <button class="plan-btn" onclick="goto404()">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Stackly</h2>
+                    <p>Founded in 2020, Stackly is revolutionizing the banking industry with innovative digital
+                        solutions. We believe in making banking accessible, secure, and effortless for everyone.</p>
+                    <p>Our mission is to empower individuals and businesses to achieve their financial goals through
+                        cutting-edge technology and personalized service.</p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h3 class="stat-number">500K+</h3>
+                            <p>Active Users</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">$2B+</h3>
+                            <p>Transactions</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">99.9%</h3>
+                            <p>Uptime</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">4.9/5</h3>
+                            <p>Rating</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-visual">
+                        <div class="stat-bubble bubble-1">📈 Growing</div>
+                        <div class="stat-bubble bubble-2">🏆 Award Winning</div>
+                        <div class="stat-bubble bubble-3">🌟 Trusted</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Banking Experience?</h2>
+                <p>Join Stackly today and experience banking like never before. Open your account in minutes!</p>
+                <div class="cta-buttons">
+                    <button class="btn-primary large" onclick="goto404()">Open Free Account</button>
+                    <button class="btn-secondary large" onclick="goto404()">Schedule Demo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">We're here to help you</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>123 Banking Street<br>New York, NY 10001</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+1 (555) 123-4567<br>Mon-Fri 9AM-6PM</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>support@stackly.com<br>info@stackly.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <input type="text" placeholder="Your Name" class="form-input">
+                    <input type="email" placeholder="Your Email" class="form-input">
+                    <input type="text" placeholder="Subject" class="form-input">
+                    <textarea placeholder="Your Message" class="form-textarea" rows="4"></textarea>
+                    <button class="btn-primary" onclick="goto404()">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="logo-stack">
+                            <span class="stack-block b1"></span>
+                            <span class="stack-block b2"></span>
+                            <span class="stack-block b3"></span>
+                        </div>
+                        <span class="brand-name">Stackly</span>
+                    </div>
+                    <p>Your trusted partner for modern banking solutions. Banking made simple, secure, and accessible.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="404.html">About Us</a></li>
+                        <li><a href="404.html">Services</a></li>
+                        <li><a href="404.html">Careers</a></li>
+                        <li><a href="404.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="404.html">Savings Account</a></li>
+                        <li><a href="404.html">Credit Cards</a></li>
+                        <li><a href="404.html">Loans</a></li>
+                        <li><a href="404.html">Investments</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="404.html">Help Center</a></li>
+                        <li><a href="404.html">Contact Us</a></li>
+                        <li><a href="404.html">Privacy Policy</a></li>
+                        <li><a href="404.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Stackly. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="404.html" class="social-icon">📘</a>
+                    <a href="404.html" class="social-icon">🐦</a>
+                    <a href="404.html" class="social-icon">📷</a>
+                    <a href="404.html" class="social-icon">💼</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
